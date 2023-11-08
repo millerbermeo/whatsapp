@@ -3,7 +3,7 @@ import React from 'react'
 function ChatMenssage() {
     return (
         <>
-            <div className='w-full h-auto bg-[#f1f3f4]  shadow-lg overflow-auto z-40 relative'>
+            <div className='w-full h-auto bg-[#f1f3f4]  shadow-lg overflow-auto relative'>
                 <div className="bg-gray-300 p-4 rounded-lg m-4 max-w-xs mx-auto translate-x-[-100px]">
                     <div className="text-left text-gray-700">
                         <p className="p-2 bg-white rounded-lg">¡Hola! ¿Cómo estás?</p>

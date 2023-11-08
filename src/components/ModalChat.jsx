@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function ModalChat() {
     const [isOpen, setIsOpen] = useState(false);
-    
+
     const [inputText, setInputText] = useState('');
     const [selectedOption, setSelectedOption] = useState('');
 
@@ -25,14 +25,17 @@ function ModalChat() {
     ];
 
     return (
-        <div>
-            <button onClick={toggleModal} className="text-white gap-5 bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm w-32 py-2.5 text-center flex justify-center items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 mr-2 mb-2">
-                Nuevo Chat
-                <i className="fa-solid fa-comment-medical"></i>
-            </button>
+        <>
+            <div>
+                <button onClick={toggleModal} className="text-white gap-5 bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm w-32 py-2.5 text-center flex justify-center items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 mr-2 mb-2">
+                    Nuevo Chat
+                    <i className="fa-solid fa-comment-medical"></i>
+                </button>
 
+
+            </div>
             {isOpen && (
-                <div className="fixed inset-0 flex items-center justify-center z-50">
+                <div className="fixed inset-0 flex items-center justify-center z-999 w-96 bg-red-600">
                     <div className="absolute inset-0 bg-black opacity-50" onClick={toggleModal}></div>
 
                     <div className="bg-white w-96 p-4 rounded shadow-lg">
@@ -76,7 +79,7 @@ function ModalChat() {
                     </div>
                 </div>
             )}
-        </div>
+        </>
     );
 }
 
