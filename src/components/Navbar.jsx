@@ -4,12 +4,36 @@ function Navbar() {
   return (
 
     <>
-        <nav className='w-[75%] h-16 left-[300px] bg-[#f1f3f4] fixed right-16 top-2 z-[-1] rounded-lg flex justify-end items-center pr-3'>
-            <div className='w-[35px] h-[35px] bg-slate-800 rounded-full text-white text-xl flex justify-center items-center'>
-            <i className="fa-solid fa-user"></i>
-            </div>
-        </nav>
+      <nav className='w-full top-0 h-16 bg-gray-200 z-[-1] rounded-lg flex justify-between items-center pr-3'>
+        {/* Logo */}
+        <div className='ml-3 text-xl font-bold text-gray-800'>
+          YourLogo
+        </div>
+
+        {/* Menu Items */}
+        <div className='flex items-center space-x-4'>
+          <a href="#" className='text-gray-700 hover:text-gray-900'>
+            Home
+          </a>
+          <a href="#" className='text-gray-700 hover:text-gray-900'>
+            About
+          </a>
+          <a href="#" className='text-gray-700 hover:text-gray-900'>
+            Services
+          </a>
+          <a href="#" className='text-gray-700 hover:text-gray-900'>
+            Contact
+          </a>
+        </div>
+
+        {/* User Icon */}
+        <div className='w-[35px] h-[35px] bg-slate-800 rounded-full text-white text-xl flex justify-center items-center'>
+          <i className="fa-solid fa-user"></i>
+        </div>
+
+      </nav>
     </>
+
   )
 }
 

@@ -13,44 +13,44 @@ const Sidebar = () => {
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
+    
   };
+
   const toggleChatMenu = () => {
     setIsChatOpen(!isChatOpen);
     setIsDown(!isDown);
   };
+
   const toggleChatMenu2 = () => {
     setIsChatOpen2(!isChatOpen2);
     setIsDown2(!isDown2);
   };
 
+  // f1f3f4
+
   return (
-    <div className="w-full h-screen fixed">
-      <div
-        className={`p-4 flex justify-center items-center text-xl text-white h-10 fixed w-12 bg-black duration-700 ease-in-out top-5 z-50 rounded-md cursor-pointer ${isOpen ? 'left-[70px]' : 'left-[310px]'
-          }`}
-        onClick={toggleSidebar}
-      >
-        <i className="fa-solid fa-bars"></i>
-      </div>
+    <div className="h-screen fixed z-10">
+
       <div  
-        className={`bg-[#f1f3f4] w-64 h-screen flex justify-start overflow-hidden flex-col duration-700 ease-in-out fixed top-0 left-0 z-10 pt-3 ${isOpen ? 'w-[62px]' : 'w-[250px]'
+        className={`bg-[#f1f2f3] w-64 h-screen flex justify-start overflow-hidden flex-col duration-700 ease-in-out fixed top-0 left-0 z-10 pt-3 ${isOpen ? 'w-[62px]' : 'w-[250px]'
           }`}
       >
         <div className="p-3 flex justify-start gap-5 w-[250px] pb-10">
-          <div className="w-[35px] h-[35px] bg-[#5f6368] p-1 flex rounded-full justify-center items-center">
-            <img src="logo.png" alt="" />
+          <div className="w-[35px] h-[35px] bg-[#000] p-1 flex rounded-full justify-center items-center cursor-pointer" onClick={toggleSidebar}>
+            {/* <img src="logo.png" alt="" onClick={toggleSidebar}/> */}
+            <i className="fa-solid fa-bars text-white text-xl"></i>
           </div>
-          <h1 className="text-[#5f6368] text-2xl font-semibold">NEGOCIEMOS</h1>
+          <h1 className="text-[#000] text-2xl font-semibold">NEGOCIEMOS</h1>
         </div>
 
 
         <div className='h-[490px] overflow-auto custom-scrollbar'>
           <ul className="text-[#5f6368] p-3 overflow-hidden w-[250px] flex flex-col gap-2 h-auto">
             <div
-              className="flex justify-start items-center gap-5 cursor-pointer hover:text-red-500"
+              className="flex justify-start items-center gap-5 cursor-pointer hover:text-black"
               onClick={toggleChatMenu}
             >
-              <i className="text-xl fa-solid fa-house bg-white rounded-full w-[35px] h-[35px] flex justify-center items-center"></i>
+              <i className="text-xl fa-solid fa-house bg-black text-white rounded-full w-[35px] h-[35px] flex justify-center items-center"></i>
               <li className='flex w-[150px] justify-between'>
                 <p>
                   Chat</p>   <i
@@ -69,10 +69,10 @@ const Sidebar = () => {
               </ul>
             </div>
             <div
-              className="flex justify-start items-center gap-5 cursor-pointer hover:text-red-500"
+              className="flex justify-start items-center gap-5 cursor-pointer hover:text-black"
               onClick={toggleChatMenu2}
             >
-              <i className="text-xl fa-solid fa-gear bg-white rounded-full w-[35px] h-[35px] flex justify-center items-center"></i>
+              <i className="text-xl fa-solid fa-gear bg-black text-white rounded-full w-[35px] h-[35px] flex justify-center items-center"></i>
               <li className='flex w-[150px] justify-between'>
                 <p>
                   Opciones</p> <i
@@ -90,27 +90,27 @@ const Sidebar = () => {
                 <li className='flex items-center gap-2'><i className="fas fa-circle text-[6px]"></i> Opción 3</li>
               </ul>
             </div>
-            <div className="flex justify-start items-center gap-5 cursor-pointer hover:text-red-500">
+            <div className="flex justify-start items-center gap-5 cursor-pointer hover:text-black">
               <i className="text-xl fa-brands fa-rocketchat bg-white rounded-full w-[35px] h-[35px] flex justify-center items-center"></i>
               <li>Perfil</li>
             </div>
-            <div className="flex justify-start items-center gap-5 cursor-pointer hover:text-red-500">
+            <div className="flex justify-start items-center gap-5 cursor-pointer hover:text-black">
               <i className="text-xl fa-solid fa-address-card bg-white rounded-full w-[35px] h-[35px] flex justify-center items-center"></i>
               <li>Contacto</li>
             </div>
-            <div className="flex justify-start items-center gap-5 cursor-pointer hover:text-red-500">
+            <div className="flex justify-start items-center gap-5 cursor-pointer hover:text-black">
               <i className="text-xl fa-brands fa-rocketchat bg-white rounded-full w-[35px] h-[35px] flex justify-center items-center"></i>
               <li>Perfil</li>
             </div>
-            <div className="flex justify-start items-center gap-5 cursor-pointer hover:text-red-500">
+            <div className="flex justify-start items-center gap-5 cursor-pointer hover:text-black">
               <i className="text-xl fa-solid fa-address-card bg-white rounded-full w-[35px] h-[35px] flex justify-center items-center"></i>
               <li>Contacto</li>
             </div>
-            <div className="flex justify-start items-center gap-5 cursor-pointer hover:text-red-500">
+            <div className="flex justify-start items-center gap-5 cursor-pointer hover:text-black">
               <i className="text-xl fa-brands fa-rocketchat bg-white rounded-full w-[35px] h-[35px] flex justify-center items-center"></i>
               <li>Perfil</li>
             </div>
-            <div className="flex justify-start items-center gap-5 cursor-pointer hover:text-red-500">
+            <div className="flex justify-start items-center gap-5 cursor-pointer hover:text-black">
               <i className="text-xl fa-solid fa-address-card bg-white rounded-full w-[35px] h-[35px] flex justify-center items-center"></i>
               <li>Contacto</li>
             </div>

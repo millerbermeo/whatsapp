@@ -9,9 +9,10 @@ function Home() {
         <>
             <div className="flex">
                 <Sidebar />
-                <Navbar/>
-                <main className="flex-1 w-full  pl-[300px] p-16 pr-10 pb-0">
-                   <div className='w-full flex h-[80vh] border mt-5'>
+     
+                <main className="flex-1 w-full  pl-[300px] p-16 pt-4 pr-10 pb-0">
+                    <Navbar/>
+                   <div className='w-full flex overflow-hidden rounded-lg mt-5 border'>
                         <ChatSidebar/>
                         <ChatMenssage/>
                    </div>
